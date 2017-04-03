@@ -9,7 +9,6 @@
 		</style>
 	</head>
 	<body>
-	<!-- <input type="text" name="value" id="matValue"> -->
 	<input type="text" placeholder="Panjang" id="x">
 	<input type="text" placeholder="Lebar" id="y">
 	<input type="button" onclick="getMatrix()" value="Submit">
@@ -36,7 +35,7 @@
 			thtml += "</table>";
 			thtml += "<br><br>";
 			thtml += "<p>Last Coordinate:</p><br>";
-			thtml += "<p>X: " + hasil.last.x + ", Y: " + hasil.last.y + "</p>";
+			thtml += "<p>X: " + (hasil.last.x+1) + ", Y: " + (hasil.last.y+1) + "</p>";
 
 			document.getElementById("demo").innerHTML = thtml;
 		}
